@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shaodws</title>
+  <style>
+    .container{
+      display: flex;
+    }
+
+    .box{
+      padding: 1rem;
+      margin: 1rem;
+      background: coral;
+      color: #fff;
+      /* offset-x | offset-y | color */
+      box-shadow: 10px 10px teal;
+      
+      /* offset-x | offset-y | blur-radius| color */
+      box-shadow: 5px 5px 20px teal;
+      
+      /* Negative Values */
+      box-shadow: -5px -5px 20px  teal;
+
+      /* offset-x | offset-y | blur-radius | shadow-radius | color */
+      box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+      
+      /* inset | offset-x | offset-y | color  (oposite x y directions) */
+      box-shadow: inset -3px -3px teal;
+
+      /* Multiple Shadows */
+      box-shadow: 3px 3px 10px teal, -3px -3px olive;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nam?</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, exercitationem.</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, animi!</p>
+    </div>
+  </div>
+</body>
+</html>
